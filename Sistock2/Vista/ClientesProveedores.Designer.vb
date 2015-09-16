@@ -22,32 +22,32 @@ Partial Class ClientesProveedores
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ClientesProveedores))
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.SplitContainer1 = New System.Windows.Forms.SplitContainer()
         Me.DGVClientes = New System.Windows.Forms.DataGridView()
         Me.tipo_contribuyente = New System.Windows.Forms.DataGridViewImageColumn()
         Me.nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.BTNSlider = New System.Windows.Forms.Button()
-        Me.SLabel8 = New Sistock2.SLabel()
-        Me.SLabel7 = New Sistock2.SLabel()
-        Me.SLabel6 = New Sistock2.SLabel()
         Me.NumericUpDown2 = New System.Windows.Forms.NumericUpDown()
-        Me.SLabel5 = New Sistock2.SLabel()
         Me.NumericUpDown1 = New System.Windows.Forms.NumericUpDown()
-        Me.SLabel4 = New Sistock2.SLabel()
         Me.WindowsSwitchButton1 = New SwitchButton.WindowsSwitchButton()
         Me.GmapClienteProveedor = New GMap.NET.WindowsForms.GMapControl()
-        Me.SLabel3 = New Sistock2.SLabel()
         Me.CBLocalidad = New System.Windows.Forms.ComboBox()
         Me.CBProvincia = New System.Windows.Forms.ComboBox()
         Me.CBTipoContribuyente = New System.Windows.Forms.ComboBox()
         Me.CBIIBB = New System.Windows.Forms.ComboBox()
-        Me.STextbox7 = New Sistock2.STextbox()
         Me.CBTipoDocumento = New System.Windows.Forms.ComboBox()
+        Me.SLabel8 = New Sistock2.SLabel()
+        Me.SLabel7 = New Sistock2.SLabel()
+        Me.SLabel6 = New Sistock2.SLabel()
+        Me.SLabel5 = New Sistock2.SLabel()
+        Me.SLabel4 = New Sistock2.SLabel()
+        Me.SLabel3 = New Sistock2.SLabel()
+        Me.STextbox7 = New Sistock2.STextbox()
         Me.STextbox6 = New Sistock2.STextbox()
         Me.SLabel2 = New Sistock2.SLabel()
         Me.SLabel1 = New Sistock2.SLabel()
@@ -58,6 +58,9 @@ Partial Class ClientesProveedores
         Me.STextbox3 = New Sistock2.STextbox()
         Me.STextbox2 = New Sistock2.STextbox()
         Me.STextbox1 = New Sistock2.STextbox()
+        Me.BTNNuevoCliente = New Sistock2.SButton2()
+        Me.BTNModificarfCliente = New Sistock2.SButton2()
+        Me.BTNEliminarCliente = New Sistock2.SButton2()
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SplitContainer1.Panel1.SuspendLayout()
         Me.SplitContainer1.Panel2.SuspendLayout()
@@ -81,6 +84,9 @@ Partial Class ClientesProveedores
         '
         'SplitContainer1.Panel2
         '
+        Me.SplitContainer1.Panel2.Controls.Add(Me.BTNEliminarCliente)
+        Me.SplitContainer1.Panel2.Controls.Add(Me.BTNModificarfCliente)
+        Me.SplitContainer1.Panel2.Controls.Add(Me.BTNNuevoCliente)
         Me.SplitContainer1.Panel2.Controls.Add(Me.BTNSlider)
         Me.SplitContainer1.Panel2.Controls.Add(Me.SLabel8)
         Me.SplitContainer1.Panel2.Controls.Add(Me.SLabel7)
@@ -116,20 +122,20 @@ Partial Class ClientesProveedores
         '
         Me.DGVClientes.AllowUserToAddRows = False
         Me.DGVClientes.AllowUserToDeleteRows = False
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer))
-        Me.DGVClientes.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer))
+        Me.DGVClientes.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle5
         Me.DGVClientes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCellsExceptHeader
         Me.DGVClientes.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer))
         Me.DGVClientes.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.DGVClientes.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DGVClientes.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DGVClientes.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle6
         Me.DGVClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DGVClientes.ColumnHeadersVisible = False
         Me.DGVClientes.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.tipo_contribuyente, Me.nombre})
@@ -147,10 +153,10 @@ Partial Class ClientesProveedores
         '
         'tipo_contribuyente
         '
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.NullValue = CType(resources.GetObject("DataGridViewCellStyle3.NullValue"), Object)
-        DataGridViewCellStyle3.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
-        Me.tipo_contribuyente.DefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle7.NullValue = CType(resources.GetObject("DataGridViewCellStyle7.NullValue"), Object)
+        DataGridViewCellStyle7.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
+        Me.tipo_contribuyente.DefaultCellStyle = DataGridViewCellStyle7
         Me.tipo_contribuyente.HeaderText = "Tipo"
         Me.tipo_contribuyente.Name = "tipo_contribuyente"
         Me.tipo_contribuyente.ReadOnly = True
@@ -160,11 +166,11 @@ Partial Class ClientesProveedores
         '
         'nombre
         '
-        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle4.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer))
-        DataGridViewCellStyle4.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
-        Me.nombre.DefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle8.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer))
+        DataGridViewCellStyle8.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
+        Me.nombre.DefaultCellStyle = DataGridViewCellStyle8
         Me.nombre.HeaderText = "Nombre"
         Me.nombre.Name = "nombre"
         Me.nombre.ReadOnly = True
@@ -184,60 +190,12 @@ Partial Class ClientesProveedores
         Me.BTNSlider.TabIndex = 30
         Me.BTNSlider.UseVisualStyleBackColor = True
         '
-        'SLabel8
-        '
-        Me.SLabel8.AutoSize = True
-        Me.SLabel8.BackColor = System.Drawing.Color.Transparent
-        Me.SLabel8.Font = New System.Drawing.Font("Dustismo", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.SLabel8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer))
-        Me.SLabel8.Location = New System.Drawing.Point(347, 411)
-        Me.SLabel8.Name = "SLabel8"
-        Me.SLabel8.Size = New System.Drawing.Size(123, 20)
-        Me.SLabel8.TabIndex = 29
-        Me.SLabel8.Text = "Cliente activo:"
-        '
-        'SLabel7
-        '
-        Me.SLabel7.AutoSize = True
-        Me.SLabel7.BackColor = System.Drawing.Color.Transparent
-        Me.SLabel7.Font = New System.Drawing.Font("Dustismo", 15.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.SLabel7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer))
-        Me.SLabel7.Location = New System.Drawing.Point(347, 377)
-        Me.SLabel7.Name = "SLabel7"
-        Me.SLabel7.Size = New System.Drawing.Size(59, 22)
-        Me.SLabel7.TabIndex = 28
-        Me.SLabel7.Text = "Otros"
-        '
-        'SLabel6
-        '
-        Me.SLabel6.AutoSize = True
-        Me.SLabel6.BackColor = System.Drawing.Color.Transparent
-        Me.SLabel6.Font = New System.Drawing.Font("Dustismo", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.SLabel6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer))
-        Me.SLabel6.Location = New System.Drawing.Point(347, 342)
-        Me.SLabel6.Name = "SLabel6"
-        Me.SLabel6.Size = New System.Drawing.Size(109, 20)
-        Me.SLabel6.TabIndex = 27
-        Me.SLabel6.Text = "Bonificación:"
-        '
         'NumericUpDown2
         '
         Me.NumericUpDown2.Location = New System.Drawing.Point(526, 342)
         Me.NumericUpDown2.Name = "NumericUpDown2"
         Me.NumericUpDown2.Size = New System.Drawing.Size(120, 20)
         Me.NumericUpDown2.TabIndex = 26
-        '
-        'SLabel5
-        '
-        Me.SLabel5.AutoSize = True
-        Me.SLabel5.BackColor = System.Drawing.Color.Transparent
-        Me.SLabel5.Font = New System.Drawing.Font("Dustismo", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.SLabel5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer))
-        Me.SLabel5.Location = New System.Drawing.Point(347, 316)
-        Me.SLabel5.Name = "SLabel5"
-        Me.SLabel5.Size = New System.Drawing.Size(151, 20)
-        Me.SLabel5.TabIndex = 25
-        Me.SLabel5.Text = "Límite de crédito:"
         '
         'NumericUpDown1
         '
@@ -246,22 +204,10 @@ Partial Class ClientesProveedores
         Me.NumericUpDown1.Size = New System.Drawing.Size(120, 20)
         Me.NumericUpDown1.TabIndex = 24
         '
-        'SLabel4
-        '
-        Me.SLabel4.AutoSize = True
-        Me.SLabel4.BackColor = System.Drawing.Color.Transparent
-        Me.SLabel4.Font = New System.Drawing.Font("Dustismo", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.SLabel4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer))
-        Me.SLabel4.Location = New System.Drawing.Point(347, 290)
-        Me.SLabel4.Name = "SLabel4"
-        Me.SLabel4.Size = New System.Drawing.Size(171, 20)
-        Me.SLabel4.TabIndex = 23
-        Me.SLabel4.Text = "Condicion de venta:"
-        '
         'WindowsSwitchButton1
         '
         Me.WindowsSwitchButton1.Activated = False
-        Me.WindowsSwitchButton1.Location = New System.Drawing.Point(596, 412)
+        Me.WindowsSwitchButton1.Location = New System.Drawing.Point(596, 405)
         Me.WindowsSwitchButton1.MaximumSize = New System.Drawing.Size(50, 19)
         Me.WindowsSwitchButton1.MinimumSize = New System.Drawing.Size(50, 19)
         Me.WindowsSwitchButton1.Name = "WindowsSwitchButton1"
@@ -293,18 +239,6 @@ Partial Class ClientesProveedores
         Me.GmapClienteProveedor.Size = New System.Drawing.Size(295, 152)
         Me.GmapClienteProveedor.TabIndex = 21
         Me.GmapClienteProveedor.Zoom = 2.0R
-        '
-        'SLabel3
-        '
-        Me.SLabel3.AutoSize = True
-        Me.SLabel3.BackColor = System.Drawing.Color.Transparent
-        Me.SLabel3.Font = New System.Drawing.Font("Dustismo", 15.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.SLabel3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer))
-        Me.SLabel3.Location = New System.Drawing.Point(347, 262)
-        Me.SLabel3.Name = "SLabel3"
-        Me.SLabel3.Size = New System.Drawing.Size(153, 22)
-        Me.SLabel3.TabIndex = 19
-        Me.SLabel3.Text = "Venta y crédito"
         '
         'CBLocalidad
         '
@@ -346,6 +280,88 @@ Partial Class ClientesProveedores
         Me.CBIIBB.TabIndex = 15
         Me.CBIIBB.Text = "Situación IIBB..."
         '
+        'CBTipoDocumento
+        '
+        Me.CBTipoDocumento.FormattingEnabled = True
+        Me.CBTipoDocumento.Items.AddRange(New Object() {"CDI", "CUIL", "CUIT", "DNI", "LC", "LE", "Pasaporte"})
+        Me.CBTipoDocumento.Location = New System.Drawing.Point(351, 111)
+        Me.CBTipoDocumento.Name = "CBTipoDocumento"
+        Me.CBTipoDocumento.Size = New System.Drawing.Size(295, 21)
+        Me.CBTipoDocumento.TabIndex = 13
+        Me.CBTipoDocumento.Text = "Tipo de documento..."
+        '
+        'SLabel8
+        '
+        Me.SLabel8.AutoSize = True
+        Me.SLabel8.BackColor = System.Drawing.Color.Transparent
+        Me.SLabel8.Font = New System.Drawing.Font("Dustismo", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SLabel8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer))
+        Me.SLabel8.Location = New System.Drawing.Point(347, 404)
+        Me.SLabel8.Name = "SLabel8"
+        Me.SLabel8.Size = New System.Drawing.Size(123, 20)
+        Me.SLabel8.TabIndex = 29
+        Me.SLabel8.Text = "Cliente activo:"
+        '
+        'SLabel7
+        '
+        Me.SLabel7.AutoSize = True
+        Me.SLabel7.BackColor = System.Drawing.Color.Transparent
+        Me.SLabel7.Font = New System.Drawing.Font("Dustismo", 15.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SLabel7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer))
+        Me.SLabel7.Location = New System.Drawing.Point(347, 370)
+        Me.SLabel7.Name = "SLabel7"
+        Me.SLabel7.Size = New System.Drawing.Size(59, 22)
+        Me.SLabel7.TabIndex = 28
+        Me.SLabel7.Text = "Otros"
+        '
+        'SLabel6
+        '
+        Me.SLabel6.AutoSize = True
+        Me.SLabel6.BackColor = System.Drawing.Color.Transparent
+        Me.SLabel6.Font = New System.Drawing.Font("Dustismo", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SLabel6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer))
+        Me.SLabel6.Location = New System.Drawing.Point(347, 342)
+        Me.SLabel6.Name = "SLabel6"
+        Me.SLabel6.Size = New System.Drawing.Size(109, 20)
+        Me.SLabel6.TabIndex = 27
+        Me.SLabel6.Text = "Bonificación:"
+        '
+        'SLabel5
+        '
+        Me.SLabel5.AutoSize = True
+        Me.SLabel5.BackColor = System.Drawing.Color.Transparent
+        Me.SLabel5.Font = New System.Drawing.Font("Dustismo", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SLabel5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer))
+        Me.SLabel5.Location = New System.Drawing.Point(347, 316)
+        Me.SLabel5.Name = "SLabel5"
+        Me.SLabel5.Size = New System.Drawing.Size(151, 20)
+        Me.SLabel5.TabIndex = 25
+        Me.SLabel5.Text = "Límite de crédito:"
+        '
+        'SLabel4
+        '
+        Me.SLabel4.AutoSize = True
+        Me.SLabel4.BackColor = System.Drawing.Color.Transparent
+        Me.SLabel4.Font = New System.Drawing.Font("Dustismo", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SLabel4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer))
+        Me.SLabel4.Location = New System.Drawing.Point(347, 290)
+        Me.SLabel4.Name = "SLabel4"
+        Me.SLabel4.Size = New System.Drawing.Size(171, 20)
+        Me.SLabel4.TabIndex = 23
+        Me.SLabel4.Text = "Condicion de venta:"
+        '
+        'SLabel3
+        '
+        Me.SLabel3.AutoSize = True
+        Me.SLabel3.BackColor = System.Drawing.Color.Transparent
+        Me.SLabel3.Font = New System.Drawing.Font("Dustismo", 15.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SLabel3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer))
+        Me.SLabel3.Location = New System.Drawing.Point(347, 262)
+        Me.SLabel3.Name = "SLabel3"
+        Me.SLabel3.Size = New System.Drawing.Size(153, 22)
+        Me.SLabel3.TabIndex = 19
+        Me.SLabel3.Text = "Venta y crédito"
+        '
         'STextbox7
         '
         Me.STextbox7.Font = New System.Drawing.Font("Dustismo", 12.0!, System.Drawing.FontStyle.Italic)
@@ -360,16 +376,6 @@ Partial Class ClientesProveedores
         Me.STextbox7.Text = "Código IIBB..."
         Me.STextbox7.Texthaschanged = False
         Me.STextbox7.ValidarVacio = False
-        '
-        'CBTipoDocumento
-        '
-        Me.CBTipoDocumento.FormattingEnabled = True
-        Me.CBTipoDocumento.Items.AddRange(New Object() {"CDI", "CUIL", "CUIT", "DNI", "LC", "LE", "Pasaporte"})
-        Me.CBTipoDocumento.Location = New System.Drawing.Point(351, 111)
-        Me.CBTipoDocumento.Name = "CBTipoDocumento"
-        Me.CBTipoDocumento.Size = New System.Drawing.Size(295, 21)
-        Me.CBTipoDocumento.TabIndex = 13
-        Me.CBTipoDocumento.Text = "Tipo de documento..."
         '
         'STextbox6
         '
@@ -511,6 +517,48 @@ Partial Class ClientesProveedores
         Me.STextbox1.Texthaschanged = False
         Me.STextbox1.ValidarVacio = False
         '
+        'BTNNuevoCliente
+        '
+        Me.BTNNuevoCliente.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(221, Byte), Integer))
+        Me.BTNNuevoCliente.FlatAppearance.BorderSize = 0
+        Me.BTNNuevoCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BTNNuevoCliente.Font = New System.Drawing.Font("Dustismo", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.BTNNuevoCliente.ForeColor = System.Drawing.Color.White
+        Me.BTNNuevoCliente.Location = New System.Drawing.Point(568, 443)
+        Me.BTNNuevoCliente.Name = "BTNNuevoCliente"
+        Me.BTNNuevoCliente.Size = New System.Drawing.Size(94, 25)
+        Me.BTNNuevoCliente.TabIndex = 31
+        Me.BTNNuevoCliente.Text = "NUEVO"
+        Me.BTNNuevoCliente.UseVisualStyleBackColor = False
+        '
+        'BTNModificarfCliente
+        '
+        Me.BTNModificarfCliente.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(221, Byte), Integer))
+        Me.BTNModificarfCliente.FlatAppearance.BorderSize = 0
+        Me.BTNModificarfCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BTNModificarfCliente.Font = New System.Drawing.Font("Dustismo", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.BTNModificarfCliente.ForeColor = System.Drawing.Color.White
+        Me.BTNModificarfCliente.Location = New System.Drawing.Point(451, 443)
+        Me.BTNModificarfCliente.Name = "BTNModificarfCliente"
+        Me.BTNModificarfCliente.Size = New System.Drawing.Size(111, 25)
+        Me.BTNModificarfCliente.TabIndex = 32
+        Me.BTNModificarfCliente.Text = "MODIFICAR"
+        Me.BTNModificarfCliente.UseVisualStyleBackColor = False
+        '
+        'BTNEliminarCliente
+        '
+        Me.BTNEliminarCliente.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(221, Byte), Integer))
+        Me.BTNEliminarCliente.FlatAppearance.BorderSize = 0
+        Me.BTNEliminarCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BTNEliminarCliente.Font = New System.Drawing.Font("Dustismo", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.BTNEliminarCliente.ForeColor = System.Drawing.Color.White
+        Me.BTNEliminarCliente.Location = New System.Drawing.Point(351, 443)
+        Me.BTNEliminarCliente.Name = "BTNEliminarCliente"
+        Me.BTNEliminarCliente.Size = New System.Drawing.Size(94, 25)
+        Me.BTNEliminarCliente.TabIndex = 33
+        Me.BTNEliminarCliente.Text = "ELIMINAR"
+        Me.BTNEliminarCliente.UseVisualStyleBackColor = False
+        '
         'ClientesProveedores
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -564,4 +612,7 @@ Partial Class ClientesProveedores
     Friend WithEvents tipo_contribuyente As DataGridViewImageColumn
     Friend WithEvents nombre As DataGridViewTextBoxColumn
     Friend WithEvents BTNSlider As Button
+    Friend WithEvents BTNEliminarCliente As SButton2
+    Friend WithEvents BTNModificarfCliente As SButton2
+    Friend WithEvents BTNNuevoCliente As SButton2
 End Class

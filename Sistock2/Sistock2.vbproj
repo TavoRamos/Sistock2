@@ -90,6 +90,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Control\Cliente.vb" />
+    <Compile Include="Control\Enum\Condicion_de_venta.vb" />
+    <Compile Include="Control\Persona.vb" />
+    <Compile Include="Control\Enum\Situacion_iibb.vb" />
+    <Compile Include="Control\Enum\Tipo_contribuyente.vb" />
+    <Compile Include="Control\Enum\Tipo_de_documento.vb" />
     <Compile Include="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -208,9 +214,7 @@
   <ItemGroup>
     <None Include="Resources\BGBTNSlider.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Control\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

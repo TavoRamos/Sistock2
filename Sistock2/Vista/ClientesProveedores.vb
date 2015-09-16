@@ -107,4 +107,16 @@ Public Class ClientesProveedores
     Private Sub BTNSlider_MouseEnter(sender As Object, e As EventArgs) Handles BTNSlider.MouseEnter
         BTNSlider.Location = New Point(-5, 202)
     End Sub
+
+    Private Sub LBLClientes_Click(sender As Object, e As EventArgs) Handles LBLClientes.Click
+        If LBLClientes.Text = "Clientes" Then
+            BTNEliminarCliente.Enabled = False
+            BTNModificarfCliente.Enabled = False
+            BTNNuevoCliente.Enabled = True
+        Else
+            BTNEliminarCliente.Enabled = True
+            BTNModificarfCliente.Enabled = True
+            BTNNuevoCliente.Enabled = False
+        End If
+    End Sub
 End Class
